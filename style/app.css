@@ -4,7 +4,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../static/loan.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../static/loan.jpg');
   background-size: cover;
   background-position: center center;
 }
@@ -35,46 +36,49 @@ body {
   }
 }
 /* end main rules */
-.container h1{
+.container h1 {
   margin: 0px auto 20px auto;
   width: fit-content;
   color: #333;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
 }
-.container div:not(.result){
+@media (min-width: 768px) {
+  .container h1 {
+    font-size: 45px;
+  }
+}
+.container div:not(.result) {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   border: 1px solid #eee;
   border-radius: 5px;
 }
-.container div span{
+.container div span {
   padding: 10px;
   background-color: rgb(212, 212, 212);
 }
-.container div input{
+.container div input {
   flex: 1;
   border: none;
+  padding: 10px;
 }
-.container div input:focus{
+.container div input:focus {
   outline: none;
 }
-.container div input:last-of-type{
-  padding: 10px 5px;
-}
-button{
+button {
   /* box model just work with block */
   display: block;
   width: fit-content;
   margin: auto;
-  padding: 10px 20px ;
+  padding: 10px 20px;
   background-color: #333;
   border: none;
   color: white;
   border-radius: 5px;
 }
-#alert{
+#alert {
   background-color: rgb(224, 23, 23);
   color: white;
   padding: 15px;
@@ -83,24 +87,24 @@ button{
   border-radius: 5px;
   display: none;
 }
-img{
+img {
   display: block;
   width: fit-content;
   margin: auto;
   display: none;
 }
-.result{
+.result {
   display: none;
 }
-.result h3{
+.result h3 {
   width: fit-content;
   margin: 30px auto 15px auto;
   color: #333;
   font-weight: 500;
 }
-.result input{
+.result div {
   background-color: #eee;
 }
-input{
+input {
   color: #333;
 }
