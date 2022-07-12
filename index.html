@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- normalize -->
     <link rel="stylesheet" href="style/normalize.css" />
-    <!-- font icon -->
-    <link rel="stylesheet" href="style/all.min.css" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,41 +14,49 @@
       rel="stylesheet"
     />
     <!-- main css -->
-    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/app.css" />
     <title>Loan-calculator</title>
   </head>
   <body>
     <div class="container">
-      <p id="alert">
-        Please check your numbers
-      </p>
+      <p id="alert">Please check your numbers</p>
       <h1>Loan Calculator</h1>
       <div>
         <span>$</span>
-        <input type="number" name="loan" id="loan" placeholder="Loan Amount">
+        <input type="number" name="loan" id="loan" placeholder="Loan Amount" />
       </div>
       <div>
         <span>%</span>
-        <input type="number" name="interest" id="interest" placeholder="interest">
+        <input
+          type="number"
+          name="interest"
+          id="interest"
+          placeholder="interest"
+        />
       </div>
       <div>
-        <input type="number" name="years" id="years" placeholder="Years To Repay">
+        <input
+          type="number"
+          name="years"
+          id="years"
+          placeholder="Years To Repay"
+        />
       </div>
       <button id="calc">Calculate</button>
-      <img src="static/loading.gif" alt="" id="loader">
+      <img src="static/loading.gif" alt="" id="loader" />
       <div class="result">
         <h3>Results</h3>
         <div>
           <span>Monthly Payment</span>
-          <input type="number" name="monthly" id="monthly" disabled>
+          <input type="number" name="monthly" id="monthly" disabled />
         </div>
         <div>
           <span>Total Payment</span>
-          <input type="number" name="t-payment" id="t-payment" disabled>
+          <input type="number" name="t-payment" id="t-payment" disabled />
         </div>
         <div>
           <span>Total Interest</span>
-          <input type="number" name="t-interest" id="t-interest" disabled>
+          <input type="number" name="t-interest" id="t-interest" disabled />
         </div>
       </div>
     </div>
@@ -59,3 +65,5 @@
     <script src="script/app.js"></script>
   </body>
 </html>
+<!-- Project link -->
+<!-- https://mahmoudsmohammed.github.io/loan_calculator/ -->
