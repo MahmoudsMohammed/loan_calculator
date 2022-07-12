@@ -14,6 +14,7 @@ body {
   margin-right: auto;
   width: 90%;
   background-color: white;
+  border-radius: 10px;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -41,7 +42,7 @@ body {
   font-size: 40px;
   font-weight: 500;
 }
-.container div{
+.container div:not(.result){
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -87,4 +88,16 @@ img{
   width: fit-content;
   margin: auto;
   display: none;
+}
+.result{
+  display: none;
+}
+.result h3{
+  width: fit-content;
+  margin: 30px auto 15px auto;
+  color: #333;
+  font-weight: 500;
+}
+.result input{
+  background-color: #eee;
 }
